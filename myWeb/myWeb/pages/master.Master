@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="myWeb.pages.master" %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../CSS/Animated_Background.css" rel="stylesheet" />
+<script src="../JavaScript/NavbarScripts.js"></script>
+<link rel="stylesheet" type="text/css" href="/CSS/background.css">
+
+<!DOCTYPE html>
+<html>
+
+<head runat="server">
+    <title>Cyber Security</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../CSS/masterCSS.css" rel="stylesheet"/>
+    <script src="../JavaScript/loginJS.js"></script>
+    <script src="../JavaScript/registerJS.js"></script>
+    <link rel="icon" href="/images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body style="background-color: #111;">
+    <form id="form1" method="post" onsubmit="return validateForm()" runat="server">
+        
+        <!--- Navbar Code --->
+        <div class="navbar-container">
+        <div id="mainbar" class="navbar">
+            <ul>
+                <li runat="server" id="bar3">
+                    <a href="first.aspx" id="logo" class="logo"><img src="../images/pngwing.com.png" height="80"/></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li runat="server" id="bar1">
+                    <a href="Attacks.aspx"><i class="fa fa-bolt"></i> Attacks</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li runat="server" id="bar2">
+                    <a href="Vulnerabilities.aspx"><i class="fa fa-bug"></i> Vulnerabilities</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li runat="server">
+                    <a href="login.aspx"><i class="fa fa-fw fa-user"></i>Login</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li runat="server" id="bar4">
+                    <a href="usersTable.aspx"><i class="fa fa-users"></i> UsersTable</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li runat="server" id="bar5">
+                    <a href="counter.aspx"><i class="fa fa-user-plus"></i> Counter</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>
+                    <i class="welcomeMsg"><%="Welcome " + Session["userName"] %></i>
+                </li>
+                <li class="navbar-right">
+                    <a><input class="btn" type="submit" value="Disconnect " id="btn" name="btn" runat="server" onserverclick="btn_logot"/><i class="fa fa-sign-out"></i></a>
+                </li>
+             </ul>           
+        </div>
+         
+        <!--- Navbar Bottom Line --->
+        <div class="navbar-line"></div> 
+        </div>                       
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <center>
+        <h3 class="light-gray-text">The Website Made By: <a href="https://www.youtube.com/watch?v=vLOliX3PYQk"> Ian Nabwani</a></h3>
+            </br>
+            </center>
+        <canvas id="background"></canvas>
+        <script src="/JavaScript/background.js"></script>
+    </form>
+
+    
+</body>
+</html>

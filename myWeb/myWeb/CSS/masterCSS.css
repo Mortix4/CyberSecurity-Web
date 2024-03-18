@@ -1,0 +1,118 @@
+﻿.navbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    overflow: auto;
+    font-family: Impact, fantasy;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: orange;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 14px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: tomato;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-line {
+    height: 2px;
+    background-color: orange; /* Replace with your desired color */
+    box-shadow: 0 0 5px orange; /* Replace with your desired color */
+    margin-top: -10px;
+}
+
+.btn {
+    position: center;
+    border: none;
+    background-color: inherit;
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Impact, fantasy;
+    color: orange;
+}
+
+.btn:hover {
+    color: tomato;
+}
+
+.redc{
+    color: red;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: -26px;
+    margin-left: -10px;
+}
+
+.welcomeMsg {
+    font-size: 25px;
+    color: #05a7f2;
+    border-left: solid cyan;
+    border-right: solid cyan;
+    border-radius: 30px;
+    margin: 5% 15% 5% 25%;
+}
+
+.welcomeMsg .fdavid{
+    font-family: David;
+}
+
+.scroll-line {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    top: 0;
+    left: 0;
+    height: 10px;
+    position: fixed;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+
+li {
+    float: left;
+    margin: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*background of the navbar boxes*/
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.light-gray-text {
+    color: #CCCCCC;
+}

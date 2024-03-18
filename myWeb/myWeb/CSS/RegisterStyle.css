@@ -1,0 +1,73 @@
+﻿/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h1-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+}
+.container.register-container {
+    position: relative;
+    place-items: center;
+    width: 420px;
+    padding: 20px;
+    background-color: rgba(255, 165, 0, 0.7);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    font-weight: var(--font-medium);
+    font-family: var(--body-font);
+}
+
+.container.register-container h2 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.container.register-container label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.container.register-container input[type="text"],
+.container.register-container input[type="password"],
+.container.register-container input[type="date"],
+.container.register-container select {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.container.register-container input[type="submit"],
+.container.register-container input[type="reset"] {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.container.register-container input[type="submit"]:hover,
+.container.register-container input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.container.register-container .alert {
+    margin-top: 10px;
+    color: #FF0000;
+}
+
+

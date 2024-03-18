@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    position: relative;
+    z-index: 1; /* Ensure the body content appears on top of the canvas */
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move the canvas behind the body content */
+}
